@@ -43,7 +43,7 @@ function initLazyImg(defaultSrc) {
     }
 
    
-     */
+     
     function loadImg(img) {  
        
         var rect = img.getBoundingClientRect();
