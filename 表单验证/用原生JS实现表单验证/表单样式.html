@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单样式</title>
+    <style>
+        .clearfix:after{
+            content: " ";
+            display: block;
+            clear: both;
+            height: 0;
+            visibility: hidden;
+        }
+        .form {
+            width: 500px;
+            margin: 0 auto;
+            /* height: 111px; */
+            /* border: 1px red solid; */
+        }
+
+        .form-items .left {
+            float: left;
+        }
+
+        .form-items .right {
+            float: right;
+        }
+
+        .form-items .right input {
+            outline: none;
+            border-radius: 5px;
+            width: 100%;
+            height: 40px;
+            padding: 0 10px;
+            border: 1px rgb(165, 165, 165) solid;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="form">
+
+        <div class="item clearfix">
+            <div class="form-items">
+                <div class="left clearfix">账号</div>
+                <div class='right clearfix'>
+                    <input type="text">
+                </div>
+                <div class="error"></div>
+            </div>
+        </div>
+
+
+    </form>
+    
+</body>
+
+</html>
